@@ -84,6 +84,7 @@ body{
     height: auto;
     width: 100%;
     position: relative;
+    
     /* vertical-align: middle; */
     /* text-align: center; */
 }
@@ -106,4 +107,10 @@ body{
     /* border: ; */
     border:2px solid ;
     box-shadow: 0 0 50px 15px #dfe4e7;
+}
+p{
+      color:blue;
+}
+.text-highlight{
+    font-weight: bolder;
 }
