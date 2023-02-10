@@ -191,9 +191,12 @@ section:nth-child(2n+1){
     /* border: 2px solid black; */
 }
 
-.skill-progress>div{
+.skill-progress > div{
     border-radius: 20px 0px 0px 20px;
     box-shadow: 1px 1px 5px 2px #989882;
+    text-align: center;
+    
+    padding: 5px;
 }
 
 .skill-name span{
@@ -202,10 +205,12 @@ section:nth-child(2n+1){
     margin-left: 10px;
     vertical-align: middle;
 }
+
 /* Common Margin Classes */
 .mb75px{
     margin-bottom: 75px;
 }
+
 /*p{
        color:blue;
       text-align: center;
@@ -224,8 +229,39 @@ section:nth-child(2n+1){
     height: inherit;
 
 }
+.fifty-five-percent{
+    width: 55%;
+    height: inherit;
+}
+.eighty-percent{
+    width: 55%;
+    height: inherit;
+}
+.fifty-percent{
+    width: 55%;
+    height: inherit;
+}
 
 /* Setting background-color */
 .mb-blue {
     background-color: #2857a4;
+}
+
+.mb-yellow{
+    background-color: rgb(231, 211, 98);
+}
+.mb-purple{
+    background-color: purple;
+}
+.mb-lightgreen{
+    background-color: rgb(35, 219, 35);
+}
+.mb-lightblue{
+    background-color: rgb(53, 183, 226);
+}
+.mb-orange{
+    background-color: orangered;
+}
+.mb-darkgreen{
+    background-color: rgb(14, 95, 14);
 }
