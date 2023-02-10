@@ -4,13 +4,14 @@ body{
 
 /* Body Header */
 #body-header{
-    height: 65vh;
-    opacity: 0.8;
-    background-image: url(Mac2.jpg);
+    height: 70vh;
+    opacity: 1.0;
+    background-image: url(mac4.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: cursive;
+    padding-top: 1.2rem;
 }
 
 /* Horizontal Lists */
@@ -28,11 +29,11 @@ body{
 }
 
 .horizontal-list li a{
-    color: darkblue;
+    color: white;
     text-decoration: none;
     
-    font-size: 25px;
-    padding: 35px;
+    /*font-size: 15px;*/
+    padding: 20px; 
 }
 
 .text-center{
@@ -45,7 +46,7 @@ body{
 
 .nav-menu li a:hover{
     color: grey;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid grey;
 }
 .text-center{
     text-align: center;
@@ -60,18 +61,19 @@ body{
 #my-name{
     font-size: 4rem;
     letter-spacing: 0.1rem;
-    color: darkblue;
+    color: white;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 .social-icons li a i{
-     padding: 10px;
-     font-size: 1.75rem;
-     color: darkblue;
+     padding: 15px;
+     font-size: 1.5rem;
+     /* color: silver; */
      border-radius: 50%;
 }
 
 .social-icons li a i:hover{
+    color: grey;
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 /* #my-image{
@@ -79,6 +81,9 @@ body{
     
     border-radius: 15px 50px 30px 5px;
 } */
+
+
+/* Section Classes */
 
 section{
     width: 100%;
@@ -89,7 +94,7 @@ section{
 }
 
 section:nth-child(2n){
-    background-color: rgb(236, 246, 246);
+    background-color: #9e9b9b29;
 }
 section:nth-child(2n+1){
     background-color: white ;
@@ -116,7 +121,7 @@ section:nth-child(2n+1){
     height: auto;
     width: 100%;
     position: relative;
-    
+    margin-bottom: 30px
     /* vertical-align: middle; */
     /* text-align: center; */
 }
@@ -128,11 +133,15 @@ section:nth-child(2n+1){
     margin: auto;
     font-family: cursive;
     text-align: justify;
-    color: blue;
+    color: rgb(13, 13, 212);
     line-height: 28px;
     font-weight: 100;
     font-size: 1.1rem;
-    font-weight: bolder;
+    
+}
+#about-para span{
+    font-weight: bold;
+    color: rgb(2, 2, 58);
 }
 #my-image{
     height: 12rem;
@@ -151,7 +160,7 @@ section:nth-child(2n+1){
     border-radius: 50%;
     /* border: ; */
     border:2px solid ;
-    box-shadow: 0 0 50px 15px #dfe4e7;
+    box-shadow: 0 0 50px 15px hwb(60 92% 5%);
 
 
 }
@@ -159,11 +168,40 @@ section:nth-child(2n+1){
 /* Skills Section */
 
 .skills-display{
-  width: 70%;
-  height: 100px;
-  border: 2px solid black;
+  width: 75%;
+  padding: 10px;
+  /* height: 100px; */
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
 }
 
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    margin: 25px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    /* border: 2px solid black; */
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
 /* Common Margin Classes */
 .mb75px{
     margin-bottom: 75px;
@@ -177,3 +215,17 @@ section:nth-child(2n+1){
     font-weight: 600;
     font-weight: bolder;
 } 
+
+
+/* Percentage CLasses */
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+
+}
+
+/* Setting background-color */
+.mb-blue {
+    background-color: #2857a4;
+}
